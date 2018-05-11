@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Page</title>
+	</head>
+	<body>
+		<h1>Examples with buttons form</h1><hr />
+
+		<form action="http://www.example.com/profile.php">
+			<p>Radio Buttons</p>
+			<p>Please select your favourite genre:<br />
+
+<!--checked="checked" attribute gives us chosen answer already, in case if customer forgets to choose one -->
+
+				<input type="checkbox" name="genre" value="rock" checked="checked" /> Rock
+				<input type="checkbox" name="genre" value="pop" /> Pop
+				<input type="checkbox" name="genre" value="jazz" /> Jazz
+			</p>
+
+			<p>Checkbox Buttons</p>
+				<p>Please select your favourite genre:<br />
+				<input type="radio" name="genre2" value="rock" checked="checked" /> Rock
+				<input type="radio" name="genre2" value="pop" /> Pop
+				<input type="radio" name="genre2" value="jazz" /> Jazz
+			</p>
+
+			<p>Drop Down list</p>
+			<p>Choose which device do you use the most: </p>
+			<select name="devices">
+				<option value="ipod">Ipod</option>
+				<option value="iphone">Iphone</option>
+				<option value="ipad">Ipad</option>
+				<option value="imac">Imac</option>
+			</select>
+
+			<!-- Drop down list with two answers using ctrl-->
+
+				<p>Choose which device do you use the most: </p>
+				<br />
+				<select name="devices2" multiple="multiple">
+					<option value="ipod" selected="selected">Ipod</option>
+					<option value="iphone">Iphone</option>
+					<option value="ipad" selected="selected">Ipad</option>
+					<option value="imac">Imac</option>
+				</select>
+
+		</form>
+
+	</body>
+</html>
